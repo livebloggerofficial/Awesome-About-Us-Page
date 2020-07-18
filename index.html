@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body>
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="images/team-member4.png" alt="" />
+      </div>
+
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque a
+          quam nulla ipsa natus quisquam!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex
+          odit tenetur alias expedita impedit in veritatis mollitia ipsam quae
+          et quia, deleniti facere praesentium sunt assumenda earum saepe
+          aperiam ullam sit. Tempora animi maxime a velit soluta laboriosam quo!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tempora!
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Websites Designed</h3>
+          <div class="project-number odometer websites-designed">0</div>
+        </div>
+
+        <div class="project">
+          <h3 class="project-name">Apps Developed</h3>
+          <div class="project-number odometer apps-developed">0</div>
+        </div>
+      </div>
+
+      <h2 class="our-team-heading">Our Team</h2>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="images/team-member1.png" alt="" />
+          <div class="designation">
+            <strong>Alice J.,</strong> (Project Manager)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/team-member2.png" alt="" />
+          <div class="designation">
+            <strong>Dave B.,</strong> (Lead Designer)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/team-member3.png" alt="" />
+          <div class="designation">
+            <strong>Jeniffer A.,</strong> (Lead Programmer)
+          </div>
+        </div>
+      </div>
+
+      <div class="our-mission">
+        <img class="quote-icon" src="images/quote-icon.png" alt="" />
+        <p>Our mission is to provide the best services to our clients.</p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+    <script>
+      const websitesDesigned = document.querySelector(".websites-designed");
+      const appsdeveloped = document.querySelector(".apps-developed");
+
+      setTimeout(() => {
+        websitesDesigned.innerHTML = "43";
+        appsdeveloped.innerHTML = "15";
+      }, 400);
+    </script>
+  </body>
+</html>
